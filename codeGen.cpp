@@ -42,6 +42,7 @@ void allocateStorage(){
     }
     for (int i = 0; i < tempNum; i++) { fprintf(fp, "T%d 0\n", i); }
     fclose(fp);
+    printf("Successfully created target file %s\n", targetName);
 }
 
 // traverses the parse tree in order, writing code to target file when it encounters any
